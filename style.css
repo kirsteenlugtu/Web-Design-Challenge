@@ -10,6 +10,10 @@ h3{
     color: rgb(70, 175, 158);
 }
 
+.img-thumbnail{
+    width: 140px;
+    height: 140px;
+}
 
 body {
     background-color: rgb(232, 236, 236);
