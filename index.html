@@ -9,8 +9,6 @@
 
 <body>
 
-   
-
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Navbar</a>
@@ -19,12 +17,11 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
+
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Dropdown
@@ -37,8 +34,12 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
+                <a class="nav-link" href="comparisons.html">Comparisons</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="data.html">Data</a>
+              </li>
+
             </ul>
            
           </div>
@@ -51,21 +52,27 @@
 
             <!-- Main text and image with summary of project -->
             <div class="col-sm-12 col-md-8">
-                <div class="main_text">
+                <div class="summary_section">
 
                     <h2>Weather vs Latitude</h2>
 
-                    <img src="resources/TempVsLat.png">
-                    <p>The purpose of this project is to explore changes in weather across cities with different latitude. For these analyses weather was pulled from the OpenWeatherMap API of over 500 cities randomly chosen from randomly chosen latitudes. Temperature, cloudiness, humidity and wind speed were collected for the dataset. Matplotlib was used to plot the weather data across the different latitude values. In this site you can find figures of the plots and any observations made from the analyses. You can also find a data table of the data set that was used for these analyses.</p>
+                    <img src="resources/TempVsLat.png" class="main_img">
+                    <p class="main_text">
+                        The purpose of this project is to explore changes in weather across cities with different latitude. For these analyses weather was pulled from the OpenWeatherMap API of over 500 cities randomly chosen from randomly chosen latitudes. Temperature, cloudiness, humidity and wind speed were collected for the dataset. 
+                        <br>
+                        <br> 
+                        Matplotlib was used to plot the weather data across the different latitude values. In this site you can find figures of the plots and any observations made from the analyses. You can also find a data table of the data set that was used for these analyses.
+                    </p>
                 </div>
             </div>
 
             <!-- Plots -->
             <div class="col-sm-12 col-md-4">
-                <div class="side_plots">
+                <div class="side_plots_section">
 
                     <h3>Visualizations</h3>
-                    <div>
+
+                    <div class="plots" style="text-align: center;">
                         <a href="temperature.html" alt="Temperature vs Latitude">
                             <img src="resources/TempVsLat.png" alt="Temperature" class="img-thumbnail">
                         </a>
@@ -79,6 +86,7 @@
                             <img src="resources/WindVsLat.png" alt="Wind Speed" class="img-thumbnail">
                         </a>
                     </div>
+
                 </div>
             </div>
 
