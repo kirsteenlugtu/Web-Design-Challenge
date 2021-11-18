@@ -11,12 +11,12 @@
 
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand" href="#">Latitude</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="text-align: right;">
 
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -24,7 +24,7 @@
 
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
+                  Plots
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li><a class="dropdown-item" href="temperature.html">Temperature</a></li>
@@ -57,11 +57,17 @@
                     <h2>Weather vs Latitude</h2>
 
                     <img src="resources/TempVsLat.png" class="main_img">
+
+                    <!-- <figure class="figure">
+                        <img src="resources/TempVsLat.png" class="figure-img img-fluid rounded" alt="Temeratur vs Latitude">
+                        <figcaption class="figure-caption text-right">Temperature of cities plotted against the city latitude.</figcaption>
+                    </figure> -->
+
                     <p class="main_text">
-                        The purpose of this project is to explore changes in weather across cities with different latitude. For these analyses weather was pulled from the OpenWeatherMap API of over 500 cities randomly chosen from randomly chosen latitudes. Temperature, cloudiness, humidity and wind speed were collected for the dataset. 
+                        The purpose of this project is to explore changes in weather across cities with different latitude. For these analyses weather data was pulled from the OpenWeatherMap API of over 500 cities that corresponded to a set of randomly chosen latitude values. <a href="temperature.html">Temperature</a>, <a href="cloudiness.html">cloudiness</a>, <a href="humidity.html">humidity</a> and <a href="windspeed.html">wind speed</a> were collected for the dataset. 
                         <br>
                         <br> 
-                        Matplotlib was used to plot the weather data across the different latitude values. In this site you can find figures of the plots and any observations made from the analyses. You can also find a data table of the data set that was used for these analyses.
+                        Matplotlib was used to plot the weather data across the different latitude values. This site provides figures of the plots and any observations made from the analyses as well as a data table of the data set that was used for these analyses.
                     </p>
                 </div>
             </div>
@@ -70,20 +76,20 @@
             <div class="col-sm-12 col-md-4">
                 <div class="side_plots_section">
 
-                    <h3>Visualizations</h3>
+                    <h3 style="text-align: center;">Visualizations</h3>
 
                     <div class="plots" style="text-align: center;">
                         <a href="temperature.html" alt="Temperature vs Latitude">
-                            <img src="resources/TempVsLat.png" alt="Temperature" class="img-thumbnail">
+                            <img src="resources/TempVsLat.png" alt="Temperature" class="plot_thumbnail">
                         </a>
                         <a href="cloudiness.html" alt="Cloudiness vs Latitude">
-                            <img src="resources/CloudinessVsLat.png" alt="Cloudiness" class="img-thumbnail">
+                            <img src="resources/CloudinessVsLat.png" alt="Cloudiness" class="plot_thumbnail">
                         </a>
                         <a href="humidity.html" alt="Humidity vs Latitude">
-                            <img src="resources/HumidityVsLat.png" alt="Humidity" class="img-thumbnail">
+                            <img src="resources/HumidityVsLat.png" alt="Humidity" class="plot_thumbnail">
                         </a>
                         <a href="windspeed.html" alt="Wind Speed vs Latitude">
-                            <img src="resources/WindVsLat.png" alt="Wind Speed" class="img-thumbnail">
+                            <img src="resources/WindVsLat.png" alt="Wind Speed" class="plot_thumbnail">
                         </a>
                     </div>
 
@@ -92,6 +98,8 @@
 
 
         </div>
+
+
     </div>
 
 
