@@ -9,6 +9,9 @@ h2{
 h3{
     color: rgb(70, 175, 158);
 }
+.navbar-brand{
+    color: rgb(70, 175, 158);
+}
 
 .plot_thumbnail{
     width: 200px;
